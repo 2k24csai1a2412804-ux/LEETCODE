@@ -1,14 +1,14 @@
 class Solution {
     public int[] arrayRankTransform(int[] arr) {
         int n=arr.length;
-        int[] sorted= Arrays.copyOf(arr,n);
+        int[] a= Arrays.copyOf(arr,n);
         Map<Integer,Integer> map = new HashMap<>();
-        Arrays.sort(sorted);
+        Arrays.sort(a);
         int rank=1;
         for(int i=0;i<n;i++){
-            map.put(sorted[i],rank);
-            while(i<n-1 && sorted[i+1]==sorted[i]){
-                 map.put(sorted[i+1],rank);
+            map.put(a[i],rank);
+            while(i<n-1 && a[i+1]==a[i]){
+                 map.put(a[i+1],rank);
                  i++;
             }
             rank++;
