@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 class Solution {
     public long gcdSum(int[] nums) {
